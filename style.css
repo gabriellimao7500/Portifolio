@@ -5,6 +5,7 @@
 
 html{
     scroll-behavior: smooth;
+
 }
 
 *{
@@ -19,7 +20,7 @@ html ::-webkit-scrollbar{
 body{
     overflow-x: hidden;
     width: 100vw;
-    height: 2500px;
+    height: 5000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,11 +83,6 @@ body{
     float: right;
 }
 
-a img{
-    margin-inline: 5px;
-    padding: 10px;
-}
-
 .hover{
     display: flex;
     align-items: center;
@@ -102,17 +98,9 @@ a img{
     transition: 200ms ease;
 }
 
-.seta1,.seta2{
-    position: fixed;
-    bottom: 30px;
-}
-
-.seta1{
-    animation: setaUmAnimation 2.5s linear infinite;
-}
-
 .sites{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -130,14 +118,67 @@ a img{
     justify-content: center;
 }
 
+
+.seta1,.seta2{
+    bottom: 30px;
+    position: fixed;
+}
+
+.seta1{
+    animation: setaUmAnimation 2.5s linear infinite;
+}
+
+
 .seta2{
     bottom: 75px;
     animation: setaAnimation 2.5s linear infinite;
 }
 
 .setas{
+    position: fixed;
     width: 57px;
+    left: calc(50vw - 57px);
+}
 
+.setasC{
+    right: calc(50vw - 57px);
+    position: fixed;
+    top: 5px;
+    width: 57px;
+    rotate: 180deg;
+}
+
+.none{
+    display: none;
+}
+
+.container-tecnologias{
+    display: flex;
+}
+
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 200px;
+}
+
+.tecnologias h1{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+
+.item-tecnologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 34px;
+    margin-inline: 40px;
 }
 
 @keyframes setaAnimation {
